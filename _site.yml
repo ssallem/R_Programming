@@ -1,0 +1,13 @@
+yml_empty() %>%
+  yml_site_opts(
+    name = "dashboard-site",
+    output_dir =  "_site",
+    include = "Dashboard1.Rmd"
+  ) %>%
+  yml_navbar(
+    title = "Test Dashboard site",
+    left = list(
+      navbar_page("Home", href = "Dashboard1.html")
+    )
+  ) %>%
+  yml_output(html_document(toc = TRUE, highlight = "textmate"))

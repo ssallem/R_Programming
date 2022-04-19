@@ -74,3 +74,6 @@ highchart() %>%
   hc_mapNavigation(enabled = TRUE) %>%
   hc_add_theme(thm)
 ```
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
